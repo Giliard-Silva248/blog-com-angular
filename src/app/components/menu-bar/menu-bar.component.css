@@ -1,0 +1,14 @@
+.conteiner-menu-bar{
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+ul{
+  display: flex;
+}
+li{
+  padding: 5px;
+  margin: 0 15px;
+}
+

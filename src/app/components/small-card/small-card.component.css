@@ -1,0 +1,17 @@
+.container-small-card{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+
+h3{
+  font-size: 17px;
+  margin: 15px;
+}
