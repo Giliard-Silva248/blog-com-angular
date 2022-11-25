@@ -7,7 +7,7 @@
 
   <div class="articles-main">
 
-      <a href="content/1">
+      <a [routerLink]="['content/1']">
         <app-big-card
         photoCover="https://adrenaline.com.br/uploads/chamadas/battlefield-20422.jpg"
         cardTitle = "Sony diz que Battlefield 'não consegue alcançar' Call of Duty"
@@ -19,20 +19,20 @@
 
   <div class="articles-others">
 
-    <a href="content/:2">
+    <a [routerLink]="['content/2']">
       <app-small-card
       photoCoverSmall="https://adrenaline.com.br/uploads/chamadas/Activision_Blizzard_lutar_garantir_compra_Microsoft.jpg"
       titleDescriptionSmall="Activision Blizzard promete lutar duramente para garantir sua compra pela Microsoft"
       creditonSmall="POR FELIPE GUGELMIN 25/11/2022 08:54"
       ></app-small-card>
-    <a href="content/:3">
+    <a [routerLink]="['content/3']">
       <app-small-card
       photoCoverSmall="https://adrenaline.com.br/uploads/chamadas/modern_warfare_2.jpg"
       titleDescriptionSmall="Call of Duty: Modern Warfare 2 estará grátis em dezembro"
       creditonSmall="POR FILIPE CARBONE 24/11/2022 21:15"
       ></app-small-card>
     </a>
-    <a href="content/:4">
+    <a [routerLink]="['content/4']">
       <app-small-card
       photoCoverSmall="https://adrenaline.com.br/uploads/chamadas/25_jogadores_God_of_War_Ragnarok_finalizaram_game.jpg"
       titleDescriptionSmall="25% dos jogadores de God of War Ragnarök já finalizaram o game"
