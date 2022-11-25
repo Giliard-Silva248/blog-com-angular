@@ -20,7 +20,7 @@ export class ContentComponent implements OnInit{
 
   id:string | null= "0"
 
-  constructor(private route:ActivatedRoute){
+  constructor(public route:ActivatedRoute){
 
   }
   ngOnInit(): void {
