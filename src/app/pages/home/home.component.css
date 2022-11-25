@@ -1,10 +1,20 @@
-.container-articles{
-  margin: 30px 0 30px 0;
 
+.container-articles{
+  margin: auto;
+  max-width: 1500px;
   display: flex;
   justify-content: space-around;
 
   align-items: center;
 
   flex-wrap: wrap;
+
+  background-color: #F0EBD8;
+
+}
+
+.cr{
+  font-size: 12px;
+  color: #748CAB;
+
 }

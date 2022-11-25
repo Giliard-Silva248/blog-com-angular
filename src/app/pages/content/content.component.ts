@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from 'src/app/data/dataFake'
 
 @Component({
   selector: 'app-content',
@@ -8,13 +10,35 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ContentComponent implements OnInit{
 
   @Input()
-  photoCoverContent:string = "https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
+  photoCoverContent:string = ""
   @Input()
-  titleContent:string = "MY ARTICLE"
+  titleContent:string = ""
   @Input()
-  descriptionContent:string = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, incidunt distinctio? Voluptatibus culpa iusto laudantium explicabo ipsum, totam, id placeat esse vel corporis incidunt consectetur! Veniam animi eum nostrum deleniti."
+  descriptionContent:string = ""
+  @Input()
+  creditoBCard:string = ""
 
-  constructor(){}
-  ngOnInit(): void {}
+  private id:string | null= "0"
+
+  constructor( private route:ActivatedRoute){
+
+  }
+  ngOnInit(): void {
+    this.route.paramMap.subscribe( value => this.id = value.get("id"))
+
+    this.setValuesToComponent(this.id)
+  }
+
+  setValuesToComponent(id:string | null){
+    const result = dataFake.filter(article => article.id == id)[0]
+
+      this.creditoBCard = result.creditoCard
+      
+      this.titleContent = result.title
+      this.descriptionContent = result.description
+      this.photoCoverContent = result.photoCover
+
+  }
+
 
 }

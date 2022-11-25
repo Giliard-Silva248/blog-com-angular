@@ -1,14 +1,31 @@
-.conteiner-menu-bar{
 
+.conteiner-menu-bar{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 15px;
+  background-color: #0D1321;
 }
-ul{
+.ul1{
   display: flex;
+  background-color: #0D1321;
 }
-li{
+.ul2{
+  background-color: #0D1321;
+}
+.ul1 li{
   padding: 5px;
   margin: 0 15px;
+  background-color: #0D1321;
+}
+.ul2 li{
+  padding: 5px;
+  margin: 0 15px;
+  background-color: #0D1321;
+  border: 1px solid #F0EBD8;
+  border-radius: 15px;
+}
+a{
+  background-color: #0D1321;
+  color: #F0EBD8;
 }
 
