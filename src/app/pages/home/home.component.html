@@ -1,19 +1,18 @@
-<app-menu-bar></app-menu-bar>
-<app-menu-title></app-menu-title>
-
+<a [routerLink]="['content/:id']">CONTENT >></a>
 <div class="container-articles">
 
   <div class="articles-main">
 
-      <app-big-card></app-big-card>
+      <app-big-card photoCover="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" cardTitle="Nova fase do UCM" cardDescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores voluptates unde dignissimos id nihil recusandae, ab fuga reiciendis sapiente officiis placeat impedit cupiditate modi beatae vero amet accusamus hic."></app-big-card>
 
   </div>
 
   <div class="articles-others">
 
-   <app-small-card></app-small-card>
-   <app-small-card></app-small-card>
-   <app-small-card></app-small-card>
+   <app-small-card photoCoverSmall="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" titleDescriptionSmall="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nam beatae qui facilis dolorem adipisci pariatur expedita atque cum ullam."></app-small-card>
+   <app-small-card photoCoverSmall="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" titleDescriptionSmall="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nam beatae qui facilis dolorem adipisci pariatur expedita atque cum ullam."></app-small-card>
+   <app-small-card photoCoverSmall="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" titleDescriptionSmall="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nam beatae qui facilis dolorem adipisci pariatur expedita atque cum ullam."></app-small-card>
+
 
   </div>
 
