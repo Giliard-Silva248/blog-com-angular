@@ -18,9 +18,9 @@ export class ContentComponent implements OnInit{
   @Input()
   creditoBCard:string = ""
 
-  private id:string | null= "0"
+  id:string | null= "0"
 
-  constructor( private route:ActivatedRoute){
+  constructor(private route:ActivatedRoute){
 
   }
   ngOnInit(): void {
@@ -33,7 +33,7 @@ export class ContentComponent implements OnInit{
     const result = dataFake.filter(article => article.id == id)[0]
 
       this.creditoBCard = result.creditoCard
-      
+
       this.titleContent = result.title
       this.descriptionContent = result.description
       this.photoCoverContent = result.photoCover
