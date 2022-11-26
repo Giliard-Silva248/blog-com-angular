@@ -18,9 +18,9 @@ export class ContentComponent implements OnInit{
   @Input()
   creditoBCard:string = ""
 
-  id:string | null= "0"
+  private id:string | null= "0"
 
-  constructor(public route:ActivatedRoute){
+  constructor(private route:ActivatedRoute){
 
   }
   ngOnInit(): void {
